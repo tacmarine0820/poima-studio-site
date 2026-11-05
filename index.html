@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Poima Studio — YouTube チャンネル運営ツール</title>
+<style>
+  :root { color-scheme: light dark; --fg:#1a1a1a; --muted:#5c5c5c; --bg:#fff; --line:#e3e3e3; --accent:#2f6f4f; }
+  @media (prefers-color-scheme: dark) {
+    :root { --fg:#e8e8e8; --muted:#a0a0a0; --bg:#161616; --line:#333; --accent:#7fc4a0; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; padding:0 1.25rem; background:var(--bg); color:var(--fg);
+         font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Noto Sans JP", sans-serif;
+         line-height:1.85; font-size:16px; }
+  main { max-width: 46rem; margin: 0 auto; padding: 3.5rem 0 5rem; }
+  h1 { font-size:1.9rem; line-height:1.35; margin:0 0 .3rem; letter-spacing:-.01em; }
+  .tagline { color:var(--muted); margin:0 0 2.5rem; }
+  h2 { font-size:1.15rem; margin:2.75rem 0 .75rem; padding-bottom:.4rem; border-bottom:1px solid var(--line); }
+  h3 { font-size:1rem; margin:1.75rem 0 .4rem; }
+  p, li { margin:.5rem 0; }
+  ul { padding-left:1.3rem; }
+  code { background:rgba(127,127,127,.14); padding:.1rem .35rem; border-radius:3px;
+         font-size:.9em; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; }
+  a { color:var(--accent); }
+  .en { color:var(--muted); font-size:.92rem; }
+  table { border-collapse:collapse; width:100%; margin:1rem 0; font-size:.94rem; display:block; overflow-x:auto; }
+  th, td { border:1px solid var(--line); padding:.55rem .7rem; text-align:left; vertical-align:top; }
+  th { background:rgba(127,127,127,.08); font-weight:600; white-space:nowrap; }
+  footer { margin-top:4rem; padding-top:1.25rem; border-top:1px solid var(--line);
+           color:var(--muted); font-size:.9rem; }
+  .hr-soft { border:0; border-top:1px solid var(--line); margin:3rem 0 0; }
+</style>
+</head>
+<body>
+<main>
+
+<h1>Poima Studio</h1>
+<p class="tagline">
+  株式会社ポイマが自社の YouTube チャンネルを運営するための社内ツールです。<br>
+  <span class="en">An in-house tool Poima Inc. uses to operate its own YouTube channels.</span>
+</p>
+
+<h2>これは何か / What this is</h2>
+<p>
+  Poima Studio（OAuth クライアント名: nemurigatari）は、株式会社ポイマが<strong>自社で保有する YouTube チャンネル</strong>に動画を投稿・管理するために自社開発した、社内向けの自動化ツールです。
+  一般に公開されたサービスではなく、第三者にアカウントを接続させたり、第三者へデータを提供したりすることはありません。
+</p>
+<p class="en">
+  Poima Studio (OAuth client name: nemurigatari) is an in-house automation tool built by Poima Inc. to upload and manage videos on
+  YouTube channels that we own. It is not a consumer product: no third party can connect an account to it, and we do not provide
+  data to any third party.
+</p>
+
+<h2>YouTube API の利用について / Use of the YouTube API</h2>
+<p>本ツールは YouTube Data API を、自社チャンネルに対する以下の操作に限って利用します。</p>
+<table>
+  <tr><th>操作 / Operation</th><th>用途 / Purpose</th></tr>
+  <tr>
+    <td>動画のアップロードと状態の確認</td>
+    <td>自社チャンネルへの動画の投稿（公開予約を含む）と、処理状況の確認。<br>
+        <span class="en">Uploading videos to our own channels (including scheduled publishing) and checking their processing status.</span></td>
+  </tr>
+  <tr>
+    <td>サムネイル・再生リスト</td>
+    <td>投稿した動画のサムネイルの設定と、再生リストへの追加。<br>
+        <span class="en">Setting thumbnails for our videos and adding them to our playlists.</span></td>
+  </tr>
+  <tr>
+    <td>チャンネル設定</td>
+    <td>自社チャンネルの説明文などの設定の読み取りと更新。<br>
+        <span class="en">Reading and updating settings, such as the description, of our own channels.</span></td>
+  </tr>
+</table>
+<p>
+  <a href="https://www.youtube.com/t/terms" rel="noopener">YouTube 利用規約</a>に従って利用します。
+  <span class="en">We use the API in accordance with the <a href="https://www.youtube.com/t/terms" rel="noopener">YouTube Terms of Service</a>.</span>
+</p>
+
+<h2>運営者 / Operator</h2>
+<table>
+  <tr><th>運営 / Operator</th><td>株式会社ポイマ / Poima Inc.</td></tr>
+  <tr><th>連絡先 / Contact</th><td><a href="mailto:info@poima.co.jp">info@poima.co.jp</a></td></tr>
+</table>
+
+<footer>
+  <a href="/privacy/">プライバシーポリシー / Privacy Policy</a><br>
+  © Poima Inc.
+</footer>
+
+</main>
+</body>
+</html>
